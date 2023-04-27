@@ -37,8 +37,8 @@ func main() {
 		
 		for _,value  := range bookings {
 
-			fmt.Printf("hello %v Thanks for booking with us \n",value.firstName)
-			go sendTicket(value.tickets,ConferenceName,value.emailAddress)
+			fmt.Printf("hello %v Thanks for booking with us \n",value.FirstName)
+			go sendTicket(value.Tickets,ConferenceName,value.EmailAddress)
 			fmt.Println(value)
 	
 		}

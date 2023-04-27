@@ -52,10 +52,10 @@ func CreateUsersData(remainingTickets *uint) []model.UserData  {
 		if isValidEmail && isValidName && isValidUserTickets {
 
 			NewUserData = model.UserData{
-				firstName: firstName,
-				lastName: lastName,
-				emailAddress: emailAddress,
-				tickets: userTickets,
+				FirstName: firstName,
+				LastName: lastName,
+				EmailAddress: emailAddress,
+				Tickets: userTickets,
 			}
 		
 			*remainingTickets = *remainingTickets - userTickets
